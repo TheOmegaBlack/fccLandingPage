@@ -118,8 +118,9 @@ body {
 }
 
 main {
-    height: 1200px;
+    height: auto;
     background: #E0CC76;
+    padding-bottom: 60px;
 }
 
 #video-wrapper {
@@ -137,15 +138,6 @@ main {
     width: 100%;
 }
 
-#products {
-    display: flex;
-}
-
-/*Traffic Accident? Injured on the job? Confessed to a homicide? What are you waiting for?!
-Hi! Welcome to the law offices of Saul Goodman and associates, from parking ticketo to mass murders, from slipper fraud to bond frauds!
-Saul goodman and associates Your one stop shop for you legal needs.
-So if they say you're breaking bad, you BETTER CALL SAUL!*/
-
 nav {
     display: none;
     font-family: itsallgoodman, monospace;
@@ -155,7 +147,7 @@ nav {
     color: #BC0E14;
     font-family: bettercallsaul, monospace;
     text-align: center;
-    font-size: 65px;
+    font-size: 40px;
 }
 
 #video-wrapper p:first-child {
@@ -173,6 +165,45 @@ hr {
     width: 80%;
 }
 
+#products, #contact-us {
+    margin: 0 auto;
+    width: 80%;
+}
+
+h2 {
+    color: #BC0E14;
+    font-family: bettercallsaul, monospace;
+    font-size: 50px;
+}
+
+p {
+    font-family: itsallgoodman, monospace;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+#products img, #contact-us img {
+    display: block;
+    margin: 40px auto 0;
+    width: 80%;
+}
+
+#contact-us img {
+    margin-bottom: 60px;
+}
+
+label {
+    display: inline-block;
+    font-family: itsallgoodman, monospace;
+    width: 120px;
+}
+
+#form {
+    margin: 0 auto;
+    width: 337px;
+}
+
 @media screen and (min-width: 960px) {
     #products {
         flex-direction: row
@@ -182,12 +213,12 @@ hr {
         width: 100%;
     }
 
-    header, main {
+    main {
         display: block;
         margin: 0 auto;
         width: 960px;
     }
-
+    
     nav {
         display: block;
         position: fixed;
@@ -219,7 +250,24 @@ hr {
     }
 
     #header-img {
+        display: block;
+        margin: 0 auto;
         padding-top: 30px;
+        max-width: 960px;
+    }
+    
+    .drink-drive {
+        color: #BC0E14;
+        font-family: bettercallsaul, monospace;
+        line-height: 50px;
+        text-align: center;
+        font-size: 65px;
+    }
+    
+    #form {
+        margin-left: 10%;
+        margin-top: 30px;
+        width: 337px;
     }
 }
 /* ==========================================================================

@@ -11,16 +11,16 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+    <header id="header">
         <nav id="nav-bar">
             <div id="link-container-parent">
                 <div id="link-container">
                     <a class="nav-link" href="#video-wrapper">ABOUT US</a>
-                    <a class="nav-link" href="#form">OUR SERVICES</a>
-                    <a class="nav-link" href="#products">CONTACT US</a>
+                    <a class="nav-link" href="#products-link">OUR SERVICES</a>
+                    <a class="nav-link" href="#contact-hr">CONTACT US</a>
                 </div>
             </div>
         </nav>
-        <header id="header">
             <img src="img/better-call-sau.png" id="header-img">
         </header>
         <main>
@@ -29,16 +29,43 @@
                 <p class="drink-drive"> But if you do, call me!"</p>
                 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/wqnHtGgVAUE?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
-            <hr>
+            <hr id="products-link">
             <div id="products">
-                <p>What we offer</p>
-            </div>
-            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-                <input id="email" type="email"
-                       name="email" placeholder="yourname@email.com">
-                <input type="submit" id="submit">
-            </form>
-    </main>
+                <h2>What we offer</h2>
+                <p>Traffic Accident? Injured on the job? Confessed to a homicide? What are you waiting for?!
+                    Hi! Welcome to the law offices of Saul Goodman and associates, from parking tickets to mass murders to bond frauds!
+                    Saul goodman and associates Your one stop shop for you legal needs.
+                    So if they say you're breaking bad, you BETTER CALL SAUL!</p>
 
+                <img src="./img/better_call_saul_1.jpg">
+            </div>
+            <hr id="contact-hr">
+            <div id="contact-us">
+                <h2>Contact Us</h2>
+                <p>Ready to solve your little issue with the state? Contact us using the form below!</p>
+                <br>
+                <div class="form-div">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                        <label for="name">Name:</label><input style="width: 213px" type="text" placeholder="your name" id="name">
+                        <br>
+                        <label for="email">Email:</label><input style="width: 213px" id="email" type="email"
+                               name="email" placeholder="yourname@email.com">
+                        <br>
+                        <label for="tel">Phone number:</label><input style="width: 213px" type="tel" placeholder="555-000-123" id="tel">
+                        <br>
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea
+                                id="message"
+                                cols="40"
+                                rows="5"></textarea>
+                        <br>
+                        <input type="submit" id="submit">
+                    </form>
+                </div>
+                <img src="img/sauls_office.jpg">
+
+            </div>
+    </main>
     </body>
 </html>
