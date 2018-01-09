@@ -99,8 +99,12 @@ textarea {
 @font-face {
     font-family: itsallgoodman;
     src: url('../fonts/goethegothicbold.ttf');
-    /* Need to upload the file on github... */
 }
+@font-face {
+    font-family: bettercallsaul;
+    src: url('../fonts/BrushScriptStd.otf');
+}
+
 
 * {
     margin: 0;
@@ -119,7 +123,7 @@ main {
 }
 
 #video-wrapper {
-    height: 1000px;
+    height: auto;
     padding-top: 50px;
 }
 
@@ -137,6 +141,11 @@ main {
     display: flex;
 }
 
+/*Traffic Accident? Injured on the job? Confessed to a homicide? What are you waiting for?!
+Hi! Welcome to the law offices of Saul Goodman and associates, from parking ticketo to mass murders, from slipper fraud to bond frauds!
+Saul goodman and associates Your one stop shop for you legal needs.
+So if they say you're breaking bad, you BETTER CALL SAUL!*/
+
 nav {
     display: none;
     font-family: itsallgoodman, monospace;
@@ -144,9 +153,9 @@ nav {
 
 .drink-drive {
     color: #BC0E14;
-    font-family: itsallgoodman, monospace;
+    font-family: bettercallsaul, monospace;
     text-align: center;
-    font-size: 51px;
+    font-size: 65px;
 }
 
 #video-wrapper p:first-child {
@@ -156,6 +165,12 @@ nav {
 #video-wrapper p:nth-child(2) {
     margin-bottom: 50px;
     margin-right: -100px;
+}
+
+hr {
+    border-top: 1px solid #BC0E14;
+    margin: 40px auto;
+    width: 80%;
 }
 
 @media screen and (min-width: 960px) {
@@ -177,11 +192,20 @@ nav {
         display: block;
         position: fixed;
         background: #E0CC76;
-        height: 40px;
-        top: 0;
+        height: 120px;
+        top: -80px;
+    }
+    
+    #link-container-parent {
+        bottom: 0;
+        left: 50%;
+        position: absolute;
     }
 
     #link-container {
+        height: 40px;
+        position: relative;
+        left: -50%;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
@@ -192,7 +216,6 @@ nav {
         color: #BC0E14;
         margin: auto;
         text-decoration: none;
-        padding-top: 7px;
     }
 
     #header-img {
